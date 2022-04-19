@@ -23,17 +23,17 @@ end
 
 function setComponentsText()
 	local sComponents = DB.getValue(window.getDatabaseNode(), "components", "");
-	
+
 	--Exception for e.g. Tome of Battle prerequisites, set all components with digits to empty
 	if string.find(sComponents, "%d") then
 		sComponents = "";
 	end
-	
+
 	--Getting rid of spaces because of width
 	sComponents = sComponents:gsub("%s", "");
-	
+
 	--Getting rid of paranthesis and text inbewteen for 5e
 	sComponents = sComponents:gsub("%b()", "");
-	
+
 	setValue(sComponents);
 end

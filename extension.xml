@@ -3,11 +3,10 @@
 <root version="3.3" >
 	<properties>
 		<name>Feature: Spell Action Info</name>
-		<version>3.4</version>
+		<version>3.4.1</version>
 		<loadorder>50</loadorder>
 		<description>
 			<text>Spell Action Info</text>
-			<website></website>
 			<author>Zarestia</author>
 		</description>
 		<ruleset>
@@ -21,7 +20,7 @@
 		</ruleset>
 	</properties>
 
-	<announcement text="3.5E/5E/PFRPG Spell Action Info - v3.4 \rby Zarestia, compatibility contributions by MeAndUnique, 2021\r---" font="emotefont"/>
+	<announcement text="Spell Action Info v3.4.1 FGC/FGU 3.5E/5E/PF, 4/19/22\r2021 by Zarestia, MeAndUnique, Justin Freitas" font="emotefont" icon="spell_icon" />
 
 	<base>
 		<!-- Campaign -->
@@ -38,5 +37,8 @@
 		
 		<!-- High Level Scripts -->
 		<script name="SAI_OptionsInit" file="scripts/sai_data_options_init.lua" />
+
+		<!-- Icons -->
+		<icon name="spell_icon" file="spell_icon.png" />
 	</base>
 </root>

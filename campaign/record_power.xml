@@ -4,15 +4,13 @@
 	<windowclass name="power_item_header" merge="join">
 		<script>
 			function onInit()
-				-- Zarestia adding function
 				setActionText();
 			end
 			
-			-- Zarestia adding setActionText function
 			function setActionText()
 				local nodeChar = getDatabaseNode();
 				local sAction = DB.getValue(nodeChar, "castingtime", "");
-				local sRitual = DB.getValue(nodeChar, "ritual")
+				local nRitual = DB.getValue(nodeChar, "ritual")
 				
 				sAction = sAction:gsub("1 action", "Action");
 				sAction = sAction:gsub("1 Action", "Action");
@@ -22,7 +20,7 @@
 					sAction = "Reaction";
 				end
 				
-				if sRitual == 1 then
+				if nRitual == 1 then
 					sAction = "R | " .. sAction;
 				end
 

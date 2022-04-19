@@ -25,7 +25,7 @@ function onDisplayChanged()
         super.onDisplayChanged();
     end
 
-    sDisplayMode = DB.getValue(getDatabaseNode(), "...powerdisplaymode", "");
+    local sDisplayMode = DB.getValue(getDatabaseNode(), "...powerdisplaymode", "");
     if sDisplayMode == "summary" then
         header.subwindow.action_text_label.setVisible(false);
         header.subwindow.components_text_label.setVisible(false);
