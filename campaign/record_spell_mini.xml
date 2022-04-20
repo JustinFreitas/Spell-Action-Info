@@ -7,7 +7,6 @@
 
 <root>
 	<windowclass name="spell_item_mini_header" merge="join">
-		<margins control="0,0,0,2" />
 		<script>
 			-- Zarestia adding onInit function
 			function onInit()
@@ -41,7 +40,7 @@
 			end
 		</script>
 		<sheetdata>
-			
+		<!-- Zarestia replacing data to change anchoring -->
 			<windowlist name="actions" merge="replace">
 				<anchored>
 					<top offset="2" />

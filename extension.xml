@@ -3,7 +3,7 @@
 <root version="3.3" >
 	<properties>
 		<name>Feature: Spell Action Info</name>
-		<version>3.4.1</version>
+		<version>3.5.1</version>
 		<loadorder>50</loadorder>
 		<description>
 			<text>Spell Action Info</text>
@@ -20,17 +20,14 @@
 		</ruleset>
 	</properties>
 
-	<announcement text="Spell Action Info v3.4.1 FGC/FGU 3.5E/5E/PF, 4/19/22\r2021 by Zarestia, MeAndUnique, Justin Freitas" font="emotefont" icon="spell_icon" />
+	<announcement text="Spell Action Info v3.5.1 FGC/FGU 3.5E/5E/PF, 4/19/22\r2021 by Zarestia, MeAndUnique, Justin Freitas" font="emotefont" icon="spell_icon" />
 
 	<base>
 		<!-- Campaign -->
-		<includefile ruleset="3.5E" source="campaign/record_spell_entry.xml" />
-		<includefile ruleset="3.5E" source="campaign/record_spell_mini.xml" />
-		<includefile ruleset="PFRPG" source="campaign/record_spell_entry.xml" />
-		<includefile ruleset="PFRPG" source="campaign/record_spell_mini.xml" />
+		<includefile ruleset="3.5E|PFRPG" source="campaign/record_spell_entry.xml" />
+		<includefile ruleset="3.5E|PFRPG" source="campaign/record_spell_mini.xml" />
+		<includefile ruleset="3.5E|PFRPG" source="campaign/record_npc.xml" />
 		<includefile ruleset="5E" source="campaign/record_power.xml" />
-		<includefile ruleset="3.5E" source="campaign/record_npc.xml" />
-		<includefile ruleset="PFRPG" source="campaign/record_npc.xml" />
 		
 		<!-- Strings -->
 		<includefile source="strings/sai_strings.xml" />
